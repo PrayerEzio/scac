@@ -1,3 +1,11 @@
+## SCAC website
+
+Author    [![PrayerEzio](https://github.com/PrayerEzio)]
+
+E-mail    283386295@qq.com
+
+Copyright
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
