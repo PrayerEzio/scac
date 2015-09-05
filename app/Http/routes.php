@@ -13,7 +13,19 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'Home\HomeController@index');
+Route::get('admin/login', 'WelcomeController@index');
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function()
+{
+	Route::get('/', 'HomeController@index');
+	Route::get('/index', 'HomeController@index');
+	Route::get('/login', 'LoginController@index');
+});
+
+Route::group(['prefix' => 'home', 'namespace' => 'Home'], function()
+{
+	Route::get('/', 'HomeController@index');
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
