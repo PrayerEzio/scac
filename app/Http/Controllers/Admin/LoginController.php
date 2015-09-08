@@ -8,8 +8,7 @@ use Illuminate\Http\Request;
 class LoginController extends Controller {
 
 	public function index(){
-		echo 'Admin/Login/index';
-// 		return view('Login.index');
+		return view('Login.index');
 	}
 	
 }
